@@ -17,7 +17,7 @@ faiss-cpu
 openai==1.11.0
 
 # Utilities
-numpy==1.24.3  # Ensure compatibility with older libraries
+numpy>=1.26.0  # Ensure compatibility with older libraries
 pandas==2.1.4
 pydantic==1.10.12  # Compatible with langchain versions
 
