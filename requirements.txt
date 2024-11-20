@@ -6,7 +6,7 @@ PyPDF2==3.0.1
 # LangChain and related
 langchain==0.1.7  # Updated for compatibility
 langchain-openai==0.0.2  # Compatible with langchain-core 0.1.7+
-langchain-community==0.0.13
+langchain-community>=0.0.20
 langchain-core>=0.1.22  # Matches langchain-openai requirements
 
 # Embeddings and vector storage
