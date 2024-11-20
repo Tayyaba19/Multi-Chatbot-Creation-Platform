@@ -32,7 +32,7 @@ A streamlined platform for creating and managing multiple AI chatbots with custo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/multi-chatbot-platform.git
+git clone https://github.com/Tayyaba19/Multi-Chatbot-Creation-Platform.git
 cd multi-chatbot-platform
 ```
 

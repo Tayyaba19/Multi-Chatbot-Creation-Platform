@@ -14,8 +14,8 @@ from langchain_openai import ChatOpenAI
 import hashlib
 from PyPDF2 import PdfReader
 
-# Load environment variables
-load_dotenv()
+def get_openai_api_key():
+    return st.secrets.get("OPENAI_API_KEY", None)
 
 # Initialize session state
 def init_session_state():
@@ -80,7 +80,9 @@ class ChatbotManager:
             chunk_overlap=200
         )
         self.embeddings = HuggingFaceEmbeddings(model_name='all-MiniLM-L6-v2')
-        self.llm = ChatOpenAI(temperature=0.4)
+        # Use secrets for API key
+        self.llm = ChatOpenAI(api_key=get_openai_api_key(), temperature=0.4)
+
 
     def process_document(self, file) -> Optional[str]:
         try:
@@ -169,7 +171,11 @@ Answer: """
             return f"Error generating response: {e}"
 
 def main():
-    st.title("Multi-Chatbot Creation Platform")
+    if not get_openai_api_key():
+        st.error("OpenAI API key not found in secrets. Please configure it in your Streamlit Cloud dashboard.")
+        return
+
+    st.title("Multi-Chatbot Creation Platform")    
     
     init_session_state()
     user_manager = UserManager()
