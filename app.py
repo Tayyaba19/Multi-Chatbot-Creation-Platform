@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 
 import streamlit as st
-from dotenv import load_dotenv
 from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
