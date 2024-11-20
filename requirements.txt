@@ -11,7 +11,7 @@ langchain-core==0.1.13
 
 # Embeddings and vector storage
 sentence-transformers==2.2.2
-faiss-cpu==1.7.4
+faiss-cpu
 
 # OpenAI (for chat completion)
 openai==1.11.0
