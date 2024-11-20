@@ -96,12 +96,6 @@ streamlit run app.py
 - Input validation
 - File size and type validation
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## ⚠️ Limitations
 - Maximum file size of 5MB
 - Requires OpenAI API key
@@ -122,6 +116,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 3. **Session Timeout**
    - Re-login required after 24 hours
    - Check internet connection
-
-## 📮 Contact
-For support or queries, please open an issue in the GitHub repository.
