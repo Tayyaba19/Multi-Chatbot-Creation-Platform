@@ -1,5 +1,4 @@
 # Core dependencies
-python==3.12.3
 streamlit==1.31.0
 PyPDF2==3.0.1
 
@@ -19,7 +18,7 @@ openai==1.11.0
 # Utilities
 numpy>=1.26.0  # Ensure compatibility with older libraries
 pandas==2.1.4
-pydantic==1.10.12  # Compatible with langchain versions
+pydantic==2.7.3  # Compatible with langchain versions
 
 # Security
 python-jose==3.3.0
